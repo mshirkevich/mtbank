@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="libs/magnific-popup.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>МТБанк - Лизинг</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+        <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt="МТБанк логотип">
+        </a>
+        <nav class="header__nav header-nav">
+            <button class="header-nav__close btn-reset">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#1B57B4"/>
+                    <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#1B57B4"/>
+                </svg>                        
+            </button>
+            <ul class="header-menu list-reset">
+                <li class="header-menu__item">
+                    <a class="header-menu__link" href="rko.html">
+                        Счета
+                    </a>
+                </li>
+                <li class="header-menu__item">
+                    <a class="header-menu__link" href="acquiring.html">
+                        Эквайринг
+                    </a>
+                </li>
+                <li class="header-menu__item">
+                    <a class="header-menu__link header-menu__link--active" href="leasing.html">
+                        Лизинг
+                    </a>
+                </li>
+                <!--<li class="header-menu__item">
+                    <a class="header-menu__link" href="#">
+                        Кредиты
+                    </a>
+                </li>-->
+                <li class="header-menu__item header-menu__item--mobile">
+                    <a class="header__phone" href="tel:+375291813505">
+                      +375 29 181 35 05
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a class="header__phone" href="tel:+375291813505">
+          +375 29 181 35 05
+        </a>
+        <button class="mobile-btn btn-reset">
+            <img src="img/mobile-menu.svg" alt="">
+        </button>
+    </div>
+</header>
+
+  <section class="main">
+    <div class="container main__container">
+      <div class="main__banner main__banner--leasing">
+        <div class="main__content">
+          <h1 class="main__title">
+            Лизинг для ИП и юридических лиц
+          </h1>
+          <p class="main__text">
+            в BYN, USD, EUR, RUB
+          </p>
+        </div>
+        <div class="main__pic">
+          <img src="img/bunner-leasing.png" alt="Bunner">
+        </div>
+      </div>
+      <div class="main__about">
+        <p class="main__about-item">
+          Быстрое рассмотрение заявки до 2х дней
+        </p>
+        <p class="main__about-item">
+          Минимальный пакет документов
+        </p>
+        <p class="main__about-item">
+          Размер авансового платежа от 20%
+        </p>
+        <p class="main__about-item">
+          Фиксированная ставка на срок до 4 лет
+        </p>
+      </div>
+    </div> 
+  </section>
+  <section class="accounts">
+    <div class="container accounts__container">
+      <div class="accounts__form">
+        <form action="POST" class="accounts-form" id="openAccount">
+          <div class="form__inputs accounts-form__body">
+            <div class="accounts-form__item input-item validate">
+              <input id="account_name" type="text" name="name" class="input-item__inp">
+              <label for="account_name" class="input-item__label">Фамилия и Имя*</label>
+            </div>
+            <div class="accounts-form__item input-item validate">
+              <input id="account_phone" type="tel" name="phone" class="input-item__inp" required>
+              <label for="account_phone" class="input-item__label">Номер телефона*</label>
+            </div>
+            <div class="accounts-form__item input-item validate">
+              <input id="account_unp" type="text" name="unp" maxlength="9" class="input-item__inp" required>
+              <label for="account_unp" class="input-item__label">УНП*</label>
+            </div>
+          </div>
+          <div class="accounts-form__footer">
+            <div class="accounts-form__policy policy">
+              <label class="policy__label">
+                <input type="checkbox" checked class="policy__inp">
+                <div class="policy__box"></div>
+              </label>
+              <div class="policy__text">
+                Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+                данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+                обработку моих персональных данных.
+              </a>
+              </div>
+            </div>
+            <button type="submit" class="btn-reset accounts-form__btn btn-primary" disabled>
+              Oформить заявку
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="conditions">
+    <div class="container conditions__container">
+      <div class="conditions__wrapper">
+        <div class="conditions__img">
+          <img src="img/conditions-new.png" alt="">
+        </div>
+        <div class="conditions__body">
+          <h2 class="conditions__title section-title">Лизинг от МТБанка — это</h2>
+          <ul class="conditions__list list-reset">
+            <div class="conditions__column">
+              <li class="conditions__item">
+                Лизинг на легковые, коммерческие, грузовые авто и спецтехнику
+              </li>
+              <li class="conditions__item">
+                С вами работает персональный менеджер
+              </li>
+              <li class="conditions__item">
+                Погашение равными долями или индивидуальный график
+              </li>
+              <li class="conditions__item">
+                Быстрое и простое оформление
+              </li>
+            </div>
+            <div class="conditions__column">
+              <li class="conditions__item">
+                Быстрый лизинг грузовых автомобилей сроком до 60 месяцев
+              </li>
+              <li class="conditions__item">
+                Быстрый лизинг новых и б\у автомобилей сроком до 48 месяцев
+              </li>
+              <li class="conditions__item">
+                Спецпрограммы лизинга автотранспорта и спецтехники
+              </li>
+              <li class="conditions__item">
+                НДС в зачет в полном объеме
+              </li>
+            </div>
+          </ul>
+          <a href="#popup-leasing" class="conditions__btn btn-primary btn-reset open-popup">
+            Оформить лизинг
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="leasing">
+    <div class="container leasing__container">
+      <h2 class="section-title leasing__title">
+        Выберите для себя предмет лизинга
+      </h2>
+      <div class="leasing__wrapper">
+        <div class="leasing-card">
+          <picture class="leasing-card__img">
+            <source srcset="img/leasing-1.png" media="(min-width: 720px)">
+            <img src="img/leasing-1-sm.png" alt="">
+          </picture>
+          <div class="leasing-card__content">
+            <h3 class="leasing-card__title">
+              Новые легковые и коммерческие автомобили
+            </h3>
+            <p class="leasing-card__desc">
+              Фиксированная ставка на срок до 48 месяцев
+            </p>
+            <a href="#popup" class="leasing-card__btn btn-primary btn-reset open-popup">
+              Получить расчет
+            </a>
+          </div>
+        </div>
+        <div class="leasing-card">
+          <picture class="leasing-card__img">
+            <source srcset="img/leasing-3.png" media="(min-width: 720px)">
+            <img src="img/leasing-3-sm.png" alt="">
+          </picture>
+          <div class="leasing-card__content">
+            <h3 class="leasing-card__title">
+              Автомобили с пробегом
+            </h3>
+            <p class="leasing-card__desc">
+              Собственное участие от 20% стоимости автомобиля
+            </p>
+            <a href="#popup" class="leasing-card__btn btn-primary btn-reset open-popup">
+              Получить расчет
+            </a>
+          </div>
+        </div>
+        <div class="leasing-card">
+          <picture class="leasing-card__img">
+            <source srcset="img/leasing-2.png" media="(min-width: 720px)">
+            <img src="img/leasing-2-sm.png" alt="">
+          </picture>
+          <div class="leasing-card__content">
+            <h3 class="leasing-card__title">
+              Грузовые автомобили
+            </h3>
+            <p class="leasing-card__desc">
+              Фиксированная ставка на срок до 60 месяцев
+            </p>
+            <a href="#popup" class="leasing-card__btn btn-primary btn-reset open-popup">
+              Получить расчет
+            </a>
+          </div>
+        </div>
+        <div class="leasing-card">
+          <picture class="leasing-card__img">
+            <source srcset="img/leasing-4.png" media="(min-width: 720px)">
+            <img src="img/leasing-4-sm.png" alt="">
+          </picture>
+          <div class="leasing-card__content">
+            <h3 class="leasing-card__title">
+              Специальная техника в лизинг
+            </h3>
+            <p class="leasing-card__desc">
+              Мы ценим ваше время, и сообщим о решении за 2-7 дней
+            </p>
+            <a href="#popup" class="leasing-card__btn btn-primary btn-reset open-popup">
+              Получить расчет
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stock">
+    <div class="container stock__container">
+      <div class="stock__wrapper">
+        <picture class="stock__img">
+          <source srcset="img/stock.png" media="(min-width: 1024px)">
+          <img src="img/stock-sm.png" alt="">
+        </picture>
+        <div class="stock__content">
+          <h2 class="stock__title section-title">
+            Акционные программы лизинга автомобилей от автоцентров
+          </h2>
+          <p class="stock__descr">
+            Большой выбор акционных программ по лизингу по ставкам от 0,0001% годовых
+          </p>
+          <a href="#popup-more" class="stock__btn btn-reset btn-primary btn-primary--white open-popup">
+            Узнать подробнее
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="support support--acquiring">
+    <div class="container support__container">
+      <h2 class="support__title section-title">
+        Дополнительная поддержка вашему бизнесу
+      </h2>
+      <ul class="block_list list-reset block_list--support">
+        <li class="block__item block__item--support">
+          <h3 class="block__item-title">
+            Регистрация домена и хостинга
+          </h3>
+          <p class="block__item-descr">
+            Бесплатная помощь в подборе и регистрации домена и хостинга
+          </p>
+        </li>
+        <li class="block__item block__item--support">
+          <h3 class="block__item-title">
+            Разработка сайта
+          </h3>
+          <p class="block__item-descr">
+            Cкидка 20% на разработку сайта на 1С-Битрикс
+          </p>
+        </li>
+        <li class="block__item block__item--support">
+          <h3 class="block__item-title">
+            Реклама
+          </h3>
+          <p class="block__item-descr">
+            Скидка 50% на настройку и ведение контекстной рекламы в первый месяц
+          </p>
+        </li>
+      </ul>
+      <form action="POST" class="support__form accounts-form" id="supportAccount">
+        <div class="form__inputs accounts-form__body">
+          <div class="accounts-form__item input-item input-item--white validate">
+            <input id="support_name" type="text" name="name" class="input-item__inp" required>
+            <label for="support_name" class="input-item__label">Фамилия и Имя*</label>
+          </div>
+          <div class="accounts-form__item input-item input-item--white validate">
+            <input id="support_phone" type="tel" name="phone" class="input-item__inp" required>
+            <label for="support_phone" class="input-item__label">Номер телефона*</label>
+          </div>
+          <div class="accounts-form__item input-item input-item--white validate">
+            <input id="support_unp" type="text" name="unp" maxlength="9" class="input-item__inp" required>
+            <label for="support_unp" class="input-item__label">УНП*</label>
+          </div>
+        </div>
+        <div class="accounts-form__footer">
+          <div class="accounts-form__policy policy policy--revert">
+            <label class="policy__label">
+              <input type="checkbox" checked class="policy__inp">
+              <div class="policy__box"></div>
+            </label>
+            <div class="policy__text">
+              Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+              данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+              обработку моих персональных данных.
+            </a>
+            </div>
+          </div>
+          <div class="accounts-form__bonus">
+            Бонусы действуют в течение 30 дней с момента отправки формы
+          </div>
+          <button type="submit" class="btn-reset accounts-form__btn btn-primary" disabled>
+            Получить бонус
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="start-business">
+    <div class="container start-business__container">
+      <div class="start-business__wrapper">
+        <h2 class="start-business__title">
+          Получите предварительный график лизинговых платежей и список документов
+        </h2>
+        <p class="start-business__descr">
+          Оставьте свои данные и получите консультацию
+        </p>
+        <form action="POST" class="accounts-form" id="startAccount">
+          <div class="form__inputs accounts-form__body">
+            <div class="accounts-form__item input-item validate">
+              <input id="start_name" type="text" name="name" class="input-item__inp" required>
+              <label for="start_name" class="input-item__label">Фамилия и Имя*</label>
+            </div>
+            <div class="accounts-form__item input-item validate">
+              <input id="start_phone" type="tel" name="phone" class="input-item__inp" required>
+              <label for="start_phone" class="input-item__label">Номер телефона*</label>
+            </div>
+            <div class="accounts-form__item input-item validate">
+              <input id="start_unp" type="text" name="unp" maxlength="9" class="input-item__inp" required>
+              <label for="start_unp" class="input-item__label">УНП*</label>
+            </div>
+          </div>
+          <div class="accounts-form__footer">
+            <div class="accounts-form__policy policy">
+              <label class="policy__label">
+                <input type="checkbox" checked class="policy__inp">
+                <div class="policy__box"></div>
+              </label>
+              <div class="policy__text">
+                Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+                данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+                обработку моих персональных данных.
+              </a>
+              </div>
+            </div>
+            <button type="submit" class="btn-reset accounts-form__btn btn-primary" disabled>
+              Получить консультацию
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">
+          <img src="img/logo.svg" alt="Logo">
+        </a>
+        <p class="footer__text">
+          © 1994–2022, ЗАО «МТБанк»
+        </p>
+        </div>
+        <p class="footer__descr">
+          Лицензия на осуществление банковской деятельности №13 от 24.03.2021г.
+        </p>
+      </div>
+  </footer>
+
+  <div class="popup mfp-hide" id="popup">
+    <button class="popup__close btn-reset">
+      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#B3B9C9"/>
+        <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#B3B9C9"/>
+      </svg>
+    </button>
+    <div class="popup__title">Получить расчет</div>
+    <p class="popup__desc">Оставьте свои данные и получите бесплатную консультацию</p>
+    <form action="POST" class="popup__form popup-form" id="popupAccount">
+      <div class="popup-form__body">
+        <input type="hidden" name="type" value=""/>
+        <div class="popup-form__item input-item validate">
+          <input id="popup_name" type="text" name="name" class="input-item__inp" required>
+          <label for="popup_name" class="input-item__label">Фамилия и Имя*</label>
+        </div>
+        <div class="popup-form__item input-item validate">
+          <input id="popup_phone" type="tel" name="phone" class="input-item__inp" required>
+          <label for="popup_phone" class="input-item__label">Номер телефона*</label>
+        </div>
+        <div class="popup-form__item input-item validate">
+          <input  id="popup_unp" type="text" name="unp" maxlength="9" class="input-item__inp" required>
+          <label for="popup_unp" class="input-item__label">УНП*</label>
+        </div>
+      </div>
+      <div class="popup-form__policy policy">
+        <label class="policy__label">
+          <input type="checkbox" checked class="policy__inp">
+          <div class="policy__box"></div>
+        </label>
+        <div class="policy__text">
+          Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+          данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+          обработку моих персональных данных.
+        </a>
+        </div>
+      </div>
+      <button type="submit" class="btn-reset popup-form__btn btn-primary" disabled>
+        Отправить
+      </button>
+    </form>
+  </div>
+  <div class="popup mfp-hide" id="popup-leasing">
+    <button class="popup__close btn-reset">
+      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#B3B9C9"/>
+        <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#B3B9C9"/>
+      </svg>
+    </button>
+    <div class="popup__title">Оформить лизинг</div>
+    <p class="popup__desc">Оставьте свои данные и получите бесплатную консультацию</p>
+    <form action="POST" class="popup__form popup-form" id="popupAccount">
+      <div class="popup-form__body">
+        <input type="hidden" name="type" value=""/>
+        <div class="popup-form__item input-item validate">
+          <input id="popup_name" type="text" name="name" class="input-item__inp" required>
+          <label for="popup_name" class="input-item__label">Фамилия и Имя*</label>
+        </div>
+        <div class="popup-form__item input-item validate">
+          <input id="popup_phone" type="tel" name="phone" class="input-item__inp" required>
+          <label for="popup_phone" class="input-item__label">Номер телефона*</label>
+        </div>
+        <div class="popup-form__item input-item validate">
+          <input  id="popup_unp" type="text" name="unp" maxlength="9" class="input-item__inp" required>
+          <label for="popup_unp" class="input-item__label">УНП*</label>
+        </div>
+      </div>
+      <div class="popup-form__policy policy">
+        <label class="policy__label">
+          <input type="checkbox" checked class="policy__inp">
+          <div class="policy__box"></div>
+        </label>
+        <div class="policy__text">
+          Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+          данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+          обработку моих персональных данных.
+        </a>
+        </div>
+      </div>
+      <button type="submit" class="btn-reset popup-form__btn btn-primary" disabled>
+        Отправить
+      </button>
+    </form>
+  </div>
+  <div class="popup mfp-hide" id="popup-more">
+    <button class="popup__close btn-reset">
+      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#B3B9C9"/>
+        <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#B3B9C9"/>
+      </svg>
+    </button>
+    <div class="popup__title">Узнать подробнее об акционных программах</div>
+    <p class="popup__desc">Оставьте свои данные и получите бесплатную консультацию</p>
+    <form action="POST" class="popup__form popup-form" id="popupAccount">
+      <div class="popup-form__body">
+        <input type="hidden" name="type" value=""/>
+        <div class="popup-form__item input-item validate">
+          <input id="popup_name" type="text" name="name" class="input-item__inp" required>
+          <label for="popup_name" class="input-item__label">Фамилия и Имя*</label>
+        </div>
+        <div class="popup-form__item input-item validate">
+          <input id="popup_phone" type="tel" name="phone" class="input-item__inp" required>
+          <label for="popup_phone" class="input-item__label">Номер телефона*</label>
+        </div>
+        <div class="popup-form__item input-item validate">
+          <input  id="popup_unp" type="text" name="unp" maxlength="9" class="input-item__inp" required>
+          <label for="popup_unp" class="input-item__label">УНП*</label>
+        </div>
+      </div>
+      <div class="popup-form__policy policy">
+        <label class="policy__label">
+          <input type="checkbox" checked class="policy__inp">
+          <div class="policy__box"></div>
+        </label>
+        <div class="policy__text">
+          Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+          данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+          обработку моих персональных данных.
+        </a>
+        </div>
+      </div>
+      <button type="submit" class="btn-reset popup-form__btn btn-primary" disabled>
+        Отправить
+      </button>
+    </form>
+  </div>
+  <div class="popup  mfp-hide" id="thanks-popup">
+    <button class="popup__close btn-reset">
+      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#B3B9C9"/>
+        <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#B3B9C9"/>
+      </svg>
+    </button>
+    <div class="popup__title">Ваша заявка успешно отправлена</div>
+    <p class="popup__desc">Свяжемся с вами в ближайшее время и проконсультируем бесплатно</p>
+  </div>
+  <a href="#thanks-popup" class="open-popup sendForm" style="display:none;"></a>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script src="libs/jquery.magnific-popup.min.js"></script>
+  <script src="libs/jquery.inputmask.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

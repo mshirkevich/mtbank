@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="libs/slick-theme.css">
+
+    <link rel="stylesheet" href="libs/magnific-popup.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>МТБанк</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.svg" alt="МТБанк логотип">
+            </a>
+            <nav class="header__nav header-nav">
+                <button class="header-nav__close btn-reset">
+                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#1B57B4"/>
+                        <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#1B57B4"/>
+                    </svg>                        
+                </button>
+                <ul class="header-menu list-reset">
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="rko.html">
+                            Счета
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="acquiring.html">
+                            Эквайринг
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="leasing.html">
+                            Лизинг
+                        </a>
+                    </li>
+                    <!--<li class="header-menu__item">
+                        <a class="header-menu__link" href="#">
+                            Кредиты
+                        </a>
+                    </li>-->
+                    <li class="header-menu__item header-menu__item--mobile">
+                        <a class="header__phone" href="tel:+375291813505">
+                            +375 29 181 35 05
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header__phone" href="tel:+375291813505">
+                +375 29 181 35 05
+            </a>
+            <button class="mobile-btn btn-reset">
+                <img src="img/mobile-menu.svg" alt="">
+            </button>
+        </div>
+    </header>
+
+    <section class="main main--404">
+		<div class="container main__container">
+		  <div class="main__banner ">
+			<div class="main__content">
+			  <h1 class="main__title">
+				Страница не найдена
+			  </h1>
+			  <p class="main__text">
+				Страница, на которую вы хотели попасть, устарела или находится в разработке. Давайте попробуем зайти на сайт заново.
+			  </p>
+			  <a href="index.html" class="main__btn btn-primary btn-reset">Перейти на главную</a>
+			</div>
+			<div class="main__pic">
+			  <img src="img/banner_not_found.png" alt="Bunner">
+			</div>
+		  </div>
+		</div> 
+	</section>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                <p class="footer__text">
+                    © 1994–2022, ЗАО «МТБанк»
+                </p>
+            </div>
+            <p class="footer__descr">
+                Лицензия на осуществление банковской деятельности №13 от 24.03.2021г.
+            </p>
+        </div>
+    </footer>
+
+    <div class="popup mfp-hide" id="popup">
+        <button class="popup__close btn-reset">
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#B3B9C9" />
+                <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#B3B9C9" />
+            </svg>
+        </button>
+        <div class="popup__title">Стать клиентом МТБанка</div>
+        <p class="popup__desc">Оставьте свои данные и получите бесплатную консультацию</p>
+        <form action="POST" class="popup__form popup-form" id="popupAccount">
+            <div class="popup-form__body">
+                <input type="hidden" name="type" value="" />
+                <div class="popup-form__item input-item validate">
+                    <input id="popup_name" type="text" name="name" class="input-item__inp" required>
+                    <label for="popup_name" class="input-item__label">Фамилия и Имя*</label>
+                </div>
+                <div class="popup-form__item input-item validate">
+                    <input id="popup_phone" type="tel" name="phone" class="input-item__inp" required>
+                    <label for="popup_phone" class="input-item__label">Номер телефона*</label>
+                </div>
+                <div class="popup-form__item input-item validate">
+                    <input id="popup_unp" type="text" name="unp" maxlength="9" class="input-item__inp" required>
+                    <label for="popup_unp" class="input-item__label">УНП*</label>
+                </div>
+            </div>
+            <div class="popup-form__policy policy">
+                <label class="policy__label">
+                    <input type="checkbox" checked class="policy__inp">
+                    <div class="policy__box"></div>
+                </label>
+                <div class="policy__text">
+                    Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты
+                        персональных
+                        данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+                        обработку моих персональных данных.
+                    </a>
+                </div>
+            </div>
+            <button type="submit" class="btn-reset popup-form__btn btn-primary" disabled>
+                Отправить
+            </button>
+        </form>
+    </div>
+    <div class="popup  mfp-hide" id="thanks-popup">
+        <button class="popup__close btn-reset">
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#B3B9C9" />
+                <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#B3B9C9" />
+            </svg>
+        </button>
+        <div class="popup__title">Ваша заявка успешно отправлена</div>
+        <p class="popup__desc">Свяжемся с вами в ближайшее время и проконсультируем бесплатно</p>
+    </div>
+    <a href="#thanks-popup" class="open-popup sendForm" style="display:none;"></a>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="libs/jquery.magnific-popup.min.js"></script>
+    <script src="libs/jquery.inputmask.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

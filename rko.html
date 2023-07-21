@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="libs/magnific-popup.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>МТБанк - РКО</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+        <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt="МТБанк логотип">
+        </a>
+        <nav class="header__nav header-nav">
+            <button class="header-nav__close btn-reset">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#1B57B4"/>
+                    <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#1B57B4"/>
+                </svg>                        
+            </button>
+            <ul class="header-menu list-reset">
+                <li class="header-menu__item">
+                    <a class="header-menu__link header-menu__link--active" href="rko.html">
+                        Счета
+                    </a>
+                </li>
+                <li class="header-menu__item">
+                    <a class="header-menu__link" href="acquiring.html">
+                        Эквайринг
+                    </a>
+                </li>
+                <li class="header-menu__item">
+                    <a class="header-menu__link" href="leasing.html">
+                        Лизинг
+                    </a>
+                </li>
+                <!--<li class="header-menu__item">
+                    <a class="header-menu__link" href="#">
+                        Кредиты
+                    </a>
+                </li>-->
+                <li class="header-menu__item header-menu__item--mobile">
+                    <a class="header__phone" href="tel:+375291813505">
+                      +375 29 181 35 05
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a class="header__phone" href="tel:+375291813505">
+          +375 29 181 35 05
+        </a>
+        <button class="mobile-btn btn-reset">
+            <img src="img/mobile-menu.svg" alt="">
+        </button>
+    </div>
+</header>
+
+  <section class="main">
+    <div class="container main__container">
+      <div class="main__banner main__banner--accounts">
+        <div class="main__content">
+          <h1 class="main__title">
+            Открытие расчетного счета для бизнеса
+          </h1>
+          <p class="main__text">
+            не выходя из дома или офиса
+          </p>
+        </div>
+        <div class="main__pic">
+          <img src="img/bunner-account.png" alt="Bunner">
+        </div>
+      </div>
+      <div class="main__about">
+        <p class="main__about-item">
+         Платежи в иностранной валюте
+        </p>
+        <p class="main__about-item">
+          Срочные платежи в Российскую Федерацию
+        </p>
+        <p class="main__about-item">
+          Обмен валюты с помощью бесплатной торговой площадки «МТБанк-экспресс»
+        </p>
+        <p class="main__about-item">
+          Бесплатные удобные сервисы для бизнеса
+        </p>
+      </div>
+    </div> 
+  </section>
+  <section class="accounts">
+    <div class="container accounts__container">
+      <div class="accounts__form">
+        <form action="POST" class="accounts-form" id="openAccount">
+          <div class="form__inputs accounts-form__body">
+            <div class="accounts-form__item input-item validate">
+              <input id="account_name" type="text" name="name" class="input-item__inp">
+              <label for="account_name" class="input-item__label">Фамилия и Имя*</label>
+            </div>
+            <div class="accounts-form__item input-item validate">
+              <input id="account_phone" type="tel" name="phone" class="input-item__inp" required>
+              <label for="account_phone" class="input-item__label">Номер телефона*</label>
+            </div>
+            <div class="accounts-form__item input-item validate">
+              <input id="account_unp" type="text" maxlength="9" name="unp" class="input-item__inp" required>
+              <label for="account_unp" class="input-item__label">УНП*</label>
+            </div>
+          </div>
+          <div class="accounts-form__footer">
+            <div class="accounts-form__policy policy">
+              <label class="policy__label">
+                <input type="checkbox" checked class="policy__inp">
+                <div class="policy__box"></div>
+              </label>
+              <div class="policy__text">
+                Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+                  данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+                  обработку моих персональных данных.
+                </a>
+              </div>
+            </div>
+            <button type="submit" class="btn-reset accounts-form__btn btn-primary" disabled>
+              Открыть счет
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="container advantage__container">
+      <h2 class="section-title">
+        Преимущества открытия счета в МТБанке
+      </h2>
+      <ul class="advantage__list list-reset">
+        <li class="advantage__item advantage__item--sending">
+          <h3 class="advantage__item-title">
+            Прием и отправка платежей в иностранной валюте
+          </h3>
+          <p class="advantage__item-descr">
+            Тарифные планы, учитывающие специфику и потребности бизнеса
+          </p>
+        </li>
+        <li class="advantage__item advantage__item--card">
+          <h3 class="advantage__item-title">
+            Бесплатный выпуск карт
+          </h3>
+          <p class="advantage__item-descr">
+            Корпоративные, зарплатные, карты личного дохода ИП
+          </p>
+        </li>
+        <li class="advantage__item advantage__item--learning">
+          <h3 class="advantage__item-title">
+            Бесплатное обучение
+          </h3>
+          <p class="advantage__item-descr">
+            Курсы по продвижению в сети и консультации от экспертов интернет-маркетинга
+          </p>
+        </li>
+        <li class="advantage__item advantage__item--terminals">
+          <h3 class="advantage__item-title">
+            Бесплатные терминалы
+          </h3>
+          <p class="advantage__item-descr">
+            При подключении эквайринга
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="packages">
+    <div class="container packages__container">
+      <h2 class="section-title">
+        Все пакеты РКО включают
+      </h2>
+      <ul class="block_list list-reset">
+        <li class="block__item">
+          <h3 class="block__item-title">
+            Бесплатный мини-курс по ведению инстаграм InstaDendy
+          </h3>
+          <p class="block__item-descr">
+            Специальное предложение
+          </p>
+        </li>
+        <li class="block__item">
+          <h3 class="block__item-title">
+            Online-управление счетами
+          </h3>
+          <p class="block__item-descr">
+            Бесплатное приложение MTBusiness
+          </p>
+        </li>
+        <li class="block__item">
+          <h3 class="block__item-title">
+            Бесплатное продвижение и бонусы
+          </h3>
+          <p class="block__item-descr">
+            На продвижение в интернете ваших товаров и услуг!
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="help">
+    <div class="container help__container">
+      <div class="help__wrapper">
+        <img src="img/help1.png" alt="" aria-hidden="true" class="help__img">
+        <form action="POST" class="help__form help-form" id="selectionAccount">
+          <h2 class="help-form__title section-title">
+            Поможем подобрать тарифный план
+          </h2>
+          <div class="help-form__wrapper">
+            <label class="help-form__check">
+              <input type="radio" name="type">
+              <span>ИП</span>
+            </label>
+            <label class="help-form__check">
+              <input type="radio" name="type">
+              <span>Организация</span>
+            </label>
+          </div>
+          <div class="help-form__body">
+            <div class="help-form__item input-item input-item--white">
+              <input id="selection_activity" type="text" name="activity" class="input-item__inp">
+              <label for="selection_activity" class="input-item__label">Сфера деятельности</label>
+            </div>
+            <div class="help-form__item input-item input-item--white validate">
+              <input id="selection_unp" type="text" maxlength="9" name="unp" class="input-item__inp" required>
+              <label for="selection_unp" class="input-item__label">УНП *</label>
+            </div>
+            <div class="help-form__item input-item input-item--white validate">
+              <input id="selection_name" type="text" name="name" class="input-item__inp" required>
+              <label for="selection_name" class="input-item__label">Фамилия и Имя*</label>
+            </div>
+            <div class="help-form__item input-item input-item--white validate">
+              <input id="selection_phone" type="tel" name="phone" class="input-item__inp" required>
+              <label for="selection_phone" class="input-item__label">Номер телефона*</label>
+            </div>
+          </div>
+          <div class="help-form__policy policy policy--revert">
+            <label class="policy__label">
+              <input type="checkbox" checked class="policy__inp">
+              <div class="policy__box"></div>
+            </label>
+            <div class="policy__text">
+              Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+                данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+                обработку моих персональных данных.
+              </a>
+            </div>
+          </div>
+          <button type="submit" class="help-form__btn btn-primary btn-reset" disabled>
+            Подобрать тарифный план
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container services__container">
+      <h2 class="section-title">
+        Бесплатные сервисы для бизнеса
+      </h2>
+      <div class="services__tabs tabs">
+        <ul class="tabs__header list-reset">
+          <li class="tabs__header-item tabs__header-item--active" data-path="tab1">
+              Проверка контрагента
+          </li>
+          <li class="tabs__header-item" data-path="tab2">
+              МТБанк-экспресс
+          </li>
+          <li class="tabs__header-item" data-path="tab3">
+              MTBusiness
+          </li>
+          <li class="tabs__header-item" data-path="tab4">
+              Смс и email информирование
+          </li>
+          <li class="tabs__header-item" data-path="tab5">
+              Программа лояльности
+          </li>
+        </ul>
+        <div class="tabs__content tabs__content--active tabs__content--ckeck" data-target="tab1">
+          <h3 class="tabs__content-title">
+            Бесплатный онлайн-сервис проверки контрагента с функционалом «Светофор»
+          </h3>
+          <ul class="tabs__content-cards list-reset">
+            <li class="card-item">
+              <img src="img/content-crad-1.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Проверка в режиме 24/7 в MTBusiness для клиентов МТБанка
+              </h3>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="img/content-crad-2.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Проверка резидентов разных стран
+              </h3>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="img/content-crad-3.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Информация из официальных источников
+              </h3>
+              </div>
+            </li>
+          </ul>
+          <a href="#popup" class="tabs__content-btn btn-reset btn-primary open-popup">
+            Стать клиентом МТБанка
+          </a>
+        </div>
+        <div class="tabs__content tabs__content--express" data-target="tab2">
+          <h3 class="tabs__content-title">
+            Онлайн-сервис для валютно-обменных операций
+          </h3>
+          <ul class="tabs__content-cards list-reset">
+            <li class="card-item">
+              <img src="img/content-crad-4.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Следи
+              </h3>
+              <p class="card-item__desc">
+                Курсы меняются в режиме реального времени
+              </p>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="img/content-crad-5.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Задавай
+              </h3>
+              <p class="card-item__desc">
+                Сделки совершаются день-в-день до 15:30
+              </p>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="img/content-crad-6.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Фиксируй
+              </h3>
+              <p class="card-item__desc">
+                Система сама зафиксирует сделку, когда курс достигнет необходимого значения
+              </p>
+              </div>
+            </li>
+          </ul>
+          <a href="#popup" class="tabs__content-btn btn-reset btn-primary open-popup">
+            Стать клиентом МТБанка
+          </a>
+        </div>
+        <div class="tabs__content tabs__content--business" data-target="tab3">
+          <h3 class="tabs__content-title">
+            Интернет-банк и мобильное приложение для управления платежами из любой точки мира
+          </h3>
+          <ul class="tabs__content-cards list-reset">
+            <li class="card-item">
+              <img src="img/content-crad-7.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Мультисервис
+              </h3>
+              <p class="card-item__desc">
+                Интернет-банк и мобильное приложение в одном сервисе
+              </p>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="img/content-crad-8.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Безопасность
+              </h3>
+              <p class="card-item__desc">
+                Можете быть уверенными, что ваши данные под защитой банка
+              </p>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="img/content-crad-9.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Решения в один клик
+              </h3>
+              <p class="card-item__desc">
+                Совершайте все необходимые операции без лишних действий
+              </p>
+              </div>
+            </li>
+          </ul>
+          <a href="#popup" class="tabs__content-btn btn-reset btn-primary open-popup">
+            Стать клиентом МТБанка
+          </a>
+        </div>
+        <div class="tabs__content tabs__content--info" data-target="tab4">
+          <h3 class="tabs__content-title">
+            Мгновенное информирование обо всех движениях по банковскому счету
+          </h3>
+          <ul class="tabs__content-cards list-reset">
+            <li class="card-item">
+              <img src="img/content-crad-10.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Полный контроль
+              </h3>
+              <p class="card-item__desc">
+                Контролируйте поступления и списания денежных средств
+              </p>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="img/content-crad-11.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Актуальная информация
+              </h3>
+              <p class="card-item__desc">
+                Всегда оперативная информация об остатках на счетах вашей компании
+              </p>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="img/content-crad-12.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Выбирайте важное
+              </h3>
+              <p class="card-item__desc">
+                Получайте только необходимую информацию в уведомлениях о счетах компании
+              </p>
+              </div>
+            </li>
+          </ul>
+          <a href="#popup" class="tabs__content-btn btn-reset btn-primary open-popup">
+            Стать клиентом МТБанка
+          </a>
+        </div>
+        <div class="tabs__content tabs__content--loyalty" data-target="tab5">
+          <h3 class="tabs__content-title">
+            Накапливайте МТБаллы и разумно тратьте их на продукты и услуги банка
+          </h3>
+          <ul class="tabs__content-cards list-reset">
+            <li class="card-item">
+              <img src="img/content-crad-13.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Присоединяйтесь
+              </h3>
+              <p class="card-item__desc">
+                Подключайтесь к программе лояльности
+              </p>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="img/content-crad-14.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Копите баллы
+              </h3>
+              <p class="card-item__desc">
+                Зарабатывайте МТБаллы, пользуясь услугами Банка
+              </p>
+              </div>
+            </li>
+            <li class="card-item">
+              <img src="img/content-crad-15.svg" alt="" class="card-item__img" aria-hidden="true">
+              <div class="card-item__content">
+              <h3 class="card-item__title">
+                Получайте приятные бонусы
+              </h3>
+              <p class="card-item__desc">
+                Тратьте баллы на услуги и продукты Банка
+              </p>
+              </div>
+            </li>
+          </ul>
+          <a href="#popup" class="tabs__content-btn btn-reset btn-primary open-popup">
+            Стать клиентом МТБанка
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="support">
+    <div class="container support__container">
+      <h2 class="support__title section-title">
+        Дополнительная поддержка вашему бизнесу
+      </h2>
+      <ul class="block_list list-reset block_list--support">
+        <li class="block__item block__item--support">
+          <h3 class="block__item-title">
+            Регистрация домена и хостинга
+          </h3>
+          <p class="block__item-descr">
+            Бесплатная помощь в подборе и регистрации домена и хостинга
+          </p>
+        </li>
+        <li class="block__item block__item--support">
+          <h3 class="block__item-title">
+            Разработка сайта
+          </h3>
+          <p class="block__item-descr">
+            Cкидка 20% на разработку сайта на 1С-Битрикс
+          </p>
+        </li>
+        <li class="block__item block__item--support">
+          <h3 class="block__item-title">
+            Реклама
+          </h3>
+          <p class="block__item-descr">
+            Скидка 50% на настройку и ведение контекстной рекламы в первый месяц
+          </p>
+        </li>
+      </ul>
+      <form action="POST" class="support__form accounts-form" id="supportAccount">
+        <div class="form__inputs accounts-form__body">
+          <div class="accounts-form__item input-item input-item--white validate">
+            <input id="support_name" type="text" name="name" class="input-item__inp" required>
+            <label for="support_name" class="input-item__label">Фамилия и Имя*</label>
+          </div>
+          <div class="accounts-form__item input-item input-item--white validate">
+            <input id="support_phone" type="tel" name="phone" class="input-item__inp" required>
+            <label for="support_phone" class="input-item__label">Номер телефона*</label>
+          </div>
+          <div class="accounts-form__item input-item input-item--white validate">
+            <input id="support_unp" type="text" name="unp" maxlength="9" class="input-item__inp" required>
+            <label for="support_unp" class="input-item__label">УНП*</label>
+          </div>
+        </div>
+        <div class="accounts-form__footer">
+          <div class="accounts-form__policy policy policy--revert">
+            <label class="policy__label">
+              <input type="checkbox" checked class="policy__inp">
+              <div class="policy__box"></div>
+            </label>
+            <div class="policy__text">
+              Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+                данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+                обработку моих персональных данных.
+              </a>
+            </div>
+          </div>
+          <div class="accounts-form__bonus">
+            Бонусы действуют в течение 30 дней с момента отправки формы
+          </div>
+          <button type="submit" class="btn-reset accounts-form__btn btn-primary" disabled>
+            Получить бонус
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="start-business">
+    <div class="container start-business__container">
+      <div class="start-business__wrapper">
+        <h2 class="start-business__title">
+          Начните бизнес за 0 рублей в месяц
+        </h2>
+        <p class="start-business__descr">
+          Оставьте свои данные и получите бесплатную консультацию
+        </p>
+        <form action="POST" class="accounts-form" id="startAccount">
+          <div class="form__inputs accounts-form__body">
+            <div class="accounts-form__item input-item validate">
+              <input id="start_name" type="text" name="name" class="input-item__inp" required>
+              <label for="start_name" class="input-item__label">Фамилия и Имя*</label>
+            </div>
+            <div class="accounts-form__item input-item validate">
+              <input id="start_phone" type="tel" name="phone" class="input-item__inp" required>
+              <label for="start_phone" class="input-item__label">Номер телефона*</label>
+            </div>
+            <div class="accounts-form__item input-item validate">
+              <input id="start_unp" type="text" name="unp" maxlength="9" class="input-item__inp" required>
+              <label for="start_unp" class="input-item__label">УНП*</label>
+            </div>
+          </div>
+          <div class="accounts-form__footer">
+            <div class="accounts-form__policy policy">
+              <label class="policy__label">
+                <input type="checkbox" checked class="policy__inp">
+                <div class="policy__box"></div>
+              </label>
+              <div class="policy__text">
+                Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+                  данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+                  обработку моих персональных данных.
+                </a>
+              </div>
+            </div>
+            <button type="submit" class="btn-reset accounts-form__btn btn-primary" disabled>
+              Отправить
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">
+          <img src="img/logo.svg" alt="Logo">
+        </a>
+        <p class="footer__text">
+          © 1994–2022, ЗАО «МТБанк»
+        </p>
+        </div>
+        <p class="footer__descr">
+          Лицензия на осуществление банковской деятельности №13 от 24.03.2021г.
+        </p>
+      </div>
+  </footer>
+  <div class="popup mfp-hide" id="popup">
+    <button class="popup__close btn-reset">
+      <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#B3B9C9"/>
+        <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#B3B9C9"/>
+      </svg>        
+    </button>
+    <div class="popup__title">Стать клиентом МТБанка</div>
+    <p class="popup__desc">Оставьте свои данные и получите бесплатную консультацию</p>
+    <form action="POST" class="popup__form popup-form" id="popupAccount">
+      <div class="popup-form__body">
+        <input type="hidden" name="type" value=""/>
+        <div class="popup-form__item input-item validate">
+          <input id="popup_name" type="text" name="name" class="input-item__inp" required>
+          <label for="popup_name" class="input-item__label">Фамилия и Имя*</label>
+        </div>
+        <div class="popup-form__item input-item validate">
+          <input id="popup_phone" type="tel" name="phone" class="input-item__inp" required>
+          <label for="popup_phone" class="input-item__label">Номер телефона*</label>
+        </div>
+        <div class="popup-form__item input-item validate">
+          <input  id="popup_unp" type="text" name="unp" maxlength="9" class="input-item__inp" required>
+          <label for="popup_unp" class="input-item__label">УНП*</label>
+        </div>
+      </div>
+      <div class="popup-form__policy policy">
+        <label class="policy__label">
+          <input type="checkbox" checked class="policy__inp">
+          <div class="policy__box"></div>
+        </label>
+        <div class="policy__text">
+          Ознакомлен с <a class="policy__link" href="https://www.mtbank.by/upload/about/raskrytie-informatsii/Politics_Presonal-Information.pdf" target="_blank">политикой ЗАО «МТБанк» в отношении обработки и защиты персональных
+            данных.</a> Даю согласие на <a class="policy__link" href="docs/form-of-consent.pdf" target="_blank">
+            обработку моих персональных данных.
+          </a>
+        </div>
+      </div>
+      <button type="submit" class="btn-reset popup-form__btn btn-primary" disabled>
+        Отправить
+      </button>
+    </form>
+  </div>
+    <div class="popup  mfp-hide" id="thanks-popup">
+      <button class="popup__close btn-reset">
+        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" width="24" height="2" transform="rotate(45 2 0)" fill="#B3B9C9"/>
+          <rect x="1" y="17" width="24" height="2" transform="rotate(-45 1 17)" fill="#B3B9C9"/>
+        </svg>
+      </button>
+      <div class="popup__title">Ваша заявка успешно отправлена</div>
+      <p class="popup__desc">Свяжемся с вами в ближайшее время и проконсультируем бесплатно</p>
+    </div>
+  <a href="#thanks-popup" class="open-popup sendForm" style="display:none;"></a>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script src="libs/jquery.magnific-popup.min.js"></script>
+  <script src="libs/jquery.inputmask.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
